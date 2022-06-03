@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body #root {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     
     
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 50px;k
     line-height: 64px;
   }
   h2 {

@@ -2,7 +2,7 @@ import React from 'react';
 import NextLink from 'next/link';
 
 import { Container, Img } from './styles';
-import Nav from '../Nav/Nav';
+import Nav from './components/Nav/Nav';
 import Link from '../../../Global/Link/Link';
 
 const Header: React.FC = () => {

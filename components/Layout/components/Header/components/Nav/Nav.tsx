@@ -1,9 +1,9 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { Container, Link, ShoppingBagIcon } from './styles';
-import List from '../../../Global/List/List';
+import List from '../../../../../Global/List/List';
 import NextLink from 'next/link';
-import ListItem from '../../../Global/ListItem/ListItem';
+import ListItem from '../../../../../Global/ListItem/ListItem';
 
 const Nav: React.FC = () => {
   const router = useRouter();

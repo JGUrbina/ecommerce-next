@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 
 import { Container } from './styles';
 import Hero from './components/Hero/Hero';
+import Feature from './components/Feature/Feature';
 
 type Props = {
   title?: string;
@@ -24,6 +25,7 @@ const Layout: React.FC<Props> = ({ title, description, children }: Props) => {
       </Head>
       <Header />
       <Hero />
+      <Feature />
       <main>{children}</main>
     </Container>
   );
