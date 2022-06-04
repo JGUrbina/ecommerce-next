@@ -11,15 +11,14 @@ const GlobalStyle = createGlobalStyle`
   html, body #root {
     width: 100%;
     height: 100vh;
-    
-    
   }
+  
   h1, h2, h3, h4, h5, h6 {
     color: #222;
   }
 
   h1 {
-    font-size: 50px;k
+    font-size: 50px;
     line-height: 64px;
   }
   h2 {

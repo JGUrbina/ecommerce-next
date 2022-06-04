@@ -5,6 +5,7 @@ import SectionProducts from '../components/Home/SectionProducts/SectionProducts'
 import Hero from '../components/Home/Hero/Hero';
 import Layout from '../components/Theme/Layout';
 import { data } from '../utils/data/products';
+import SmBanner from '../components/Home/SmBanner/SmBanner';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         subTitle="Summer Collection New Morder Design"
         products={data.productsArrivals}
       />
+      <SmBanner />
     </Layout>
   );
 };
