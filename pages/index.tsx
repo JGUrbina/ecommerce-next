@@ -6,6 +6,7 @@ import Hero from '../components/Home/Hero/Hero';
 import Layout from '../components/Theme/Layout';
 import { data } from '../utils/data/products';
 import SmBanner from '../components/Home/SmBanner/SmBanner';
+import XsBanner from '../components/Home/XsBanner/XsBanner';
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         products={data.productsArrivals}
       />
       <SmBanner />
+      <XsBanner />
     </Layout>
   );
 };

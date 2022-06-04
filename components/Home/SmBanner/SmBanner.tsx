@@ -12,7 +12,7 @@ const SmBanner: React.FC = () => {
         subTitle="carzy deals"
         description="The best classic dress is on sale at cara"
         textButton="Learn More"
-        type="smbanner"
+        type="sm"
         category="shirt"
       />
       <BannerBox
@@ -21,7 +21,7 @@ const SmBanner: React.FC = () => {
         subTitle="carzy deals"
         description="The best classic dress is on sale at cara"
         textButton="Learn More"
-        type="smbanner"
+        type="sm"
         category="shirt"
       />
     </Container>
