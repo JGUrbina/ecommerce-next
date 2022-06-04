@@ -13,6 +13,7 @@ export const Container = styled.header`
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 3;
 `;
 
 export const Img = styled.img`

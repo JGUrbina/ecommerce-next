@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from './styles';
-import FeBox from '../Fe-box/FeBox';
+import FeBox from './components/Fe-box/FeBox';
 
 const Feature: React.FC = () => {
   return (
