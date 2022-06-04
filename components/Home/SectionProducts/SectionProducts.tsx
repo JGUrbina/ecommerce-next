@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container, ProductContainer } from './styles';
-import ProductCard from '../../ProductCard/ProductCard';
+import ProductCard from '../../Global/ProductCard/ProductCard';
 import { data, IProduct } from '../../../utils/data/products';
 
 type Props = {

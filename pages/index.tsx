@@ -7,6 +7,7 @@ import Layout from '../components/Theme/Layout';
 import { data } from '../utils/data/products';
 import SmBanner from '../components/Home/SmBanner/SmBanner';
 import XsBanner from '../components/Home/XsBanner/XsBanner';
+import NewsLetter from '../components/Home/NewsLetter/NewsLetter';
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       />
       <SmBanner />
       <XsBanner />
+      <NewsLetter />
     </Layout>
   );
 };

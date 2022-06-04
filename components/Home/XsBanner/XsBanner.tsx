@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerBox from '../../BannerBox/BannerBox';
+import BannerBox from '../../Global/BannerBox/BannerBox';
 
 import { Container } from './styles';
 
