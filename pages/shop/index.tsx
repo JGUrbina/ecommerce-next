@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import { Container } from './styles';
-import Layout from '../../components/Layout/Layout';
+import Layout from '../../components/Theme/Layout';
 
 const Shop: React.FC = () => {
   return (

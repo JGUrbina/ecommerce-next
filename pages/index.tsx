@@ -1,18 +1,27 @@
 import type { NextPage } from 'next';
-import Banner from '../components/Layout/components/Banner/Banner';
-import Feature from '../components/Layout/components/Feature/Feature';
-import FeatureProducts from '../components/Layout/components/FeatureProducts/FeatureProducts';
-import Hero from '../components/Layout/components/Hero/Hero';
-
-import Layout from '../components/Layout/Layout';
+import Banner from '../components/Home/Banner/Banner';
+import Feature from '../components/Theme/components/Feature/Feature';
+import SectionProducts from '../components/Home/SectionProducts/SectionProducts';
+import Hero from '../components/Home/Hero/Hero';
+import Layout from '../components/Theme/Layout';
+import { data } from '../utils/data/products';
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Hero />
       <Feature />
-      <FeatureProducts />
+      <SectionProducts
+        title="Feature Products"
+        subTitle="Summer Collection New Morder Design"
+        products={data.productsFeature}
+      />
       <Banner />
+      <SectionProducts
+        title="New Arrivals"
+        subTitle="Summer Collection New Morder Design"
+        products={data.productsArrivals}
+      />
     </Layout>
   );
 };

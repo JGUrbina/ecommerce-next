@@ -1,17 +1,18 @@
 import styled from "styled-components";
+//abcdefghijklmnopqrstvuwxyz
 
 export const Container = styled.section`
+    align-items: center;
+    background-image: url('img/banner/b2.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 40vh;
     justify-content: center;
     margin: 40px 0;
     text-align: center;
-    background-image: url('img/banner/b2.jpg');
     width: 100%;
-    height: 40vh;
-    background-size: cover;
-    background-position: center;
 `;
 export const Title = styled.h2`
     color: #fff;
@@ -26,13 +27,13 @@ export const Subtitle = styled.h4`
     font-size: 16px;
 `;
 export const Button = styled.button`
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
-    color: #000;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
     outline: none;
     transition: background-color 0.5s ease;
 

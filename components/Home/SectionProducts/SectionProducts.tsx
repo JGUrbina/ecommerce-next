@@ -1,16 +1,26 @@
 import React from 'react';
 
 import { Container, ProductContainer } from './styles';
-import ProductCard from './components/Product/ProductCard';
-import { data, IProduct } from '../../../../utils/data/data';
+import ProductCard from '../../ProductCard/ProductCard';
+import { data, IProduct } from '../../../utils/data/products';
 
-const FeatureProducts: React.FC = () => {
+type Props = {
+  title: string;
+  subTitle: string;
+  products: IProduct[];
+};
+
+const SectionProducts: React.FC<Props> = ({
+  title,
+  subTitle,
+  products,
+}: Props) => {
   return (
     <Container>
-      <h2>Feature Products</h2>
-      <p>Summer Collection New Morder Design</p>
+      <h2>{title}</h2>
+      <p>{subTitle}</p>
       <ProductContainer>
-        {data.products.map((product: IProduct) => (
+        {products.map((product: IProduct) => (
           <ProductCard
             key={product.id}
             image={product.image}
@@ -28,4 +38,4 @@ const FeatureProducts: React.FC = () => {
   );
 };
 
-export default FeatureProducts;
+export default SectionProducts;
