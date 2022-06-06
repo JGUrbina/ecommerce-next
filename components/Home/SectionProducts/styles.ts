@@ -14,6 +14,8 @@ export const Container = styled.section`
         }
         @media (min-width: 720px) {
             font-size: 3.5rem;
+            
+            
 
         }
     }
@@ -33,6 +35,11 @@ export const ProductContainer = styled.div`
        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+       
+    }
+
+    @media (min-width: 720px) {
+         padding: 40px 80px;
     }
 `;
 
