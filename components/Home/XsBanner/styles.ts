@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    padding: 40px 80px;
+    width: 100%;
+    padding: 40px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media(min-width: 840px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
 `;

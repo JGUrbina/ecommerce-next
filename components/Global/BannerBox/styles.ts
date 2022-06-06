@@ -11,6 +11,7 @@ type ITitleProps = {
 }
 
 export const Container = styled.div<IBannerBoxProps>`
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -19,12 +20,17 @@ export const Container = styled.div<IBannerBoxProps>`
     background-repeat: no-repeat;
      background-size: cover;
     background-position: center;
-    width:  ${({type}) => type === "sm" ? '48%' : '31%'};
-    min-width:  ${({type}) => type === "sm" ? '580px' : '400px'};
-    height:  ${({type}) => type === "sm" ? '50vh' : '30vh'};
-    margin: 10px;
-    padding:  ${({type}) => type === "sm" ? '30px' : '20px'};
-    display: flex;
+    width:  100%;
+    min-width:  280px;
+    margin: 10px 0;
+    padding: 15px;
+    @media (min-width: 580px) {
+      padding:  ${({type}) => type === "sm" ? '30px' : '20px'};
+      width:  ${({type}) => type === "sm" ? '48%' : '31%'};
+      min-width:  ${({type}) => type === "sm" ? '580px' : '400px'};
+      height:  ${({type}) => type === "sm" ? '50vh' : '30vh'};
+      margin: 10px;
+    }
    
     &:hover button { 
       background-color: #088178;
@@ -39,12 +45,17 @@ const sm = css`
 `;
 
 const xs = css`
-  color: #fff;
+  
   font-size: 2rem;
   font-weight: 700;
 `;
 export const Title = styled.h2<ITitleProps>`
-  ${({type}) => type === "sm" ? sm : xs};
+  color: #fff;
+  font-size: 1.5rem;
+  @media (min-width: 520px) {
+       ${({type}) => type === "sm" ? sm : xs};
+    }
+ 
 `;
 
 
@@ -56,12 +67,15 @@ export const SubtitleSm = styled.h4`
 
 export const SubtitleXs = styled.h3`
   color: #EC544E;
-  font-size: 1.4rem;
+  font-size: 1.37rem;
+  @media (min-width: 520px) {
+       font-size: 1.6rem;
+    }
   font-weight: 600;
 `;
 export const Description = styled.span`
   color: #fff;
-  font-size: 1.2rem;
+  font-size: .96rem;
   font-weight: 500;
   padding-bottom: 15px;
 `;

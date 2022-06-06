@@ -16,8 +16,18 @@ export const Container = styled.section`
 `;
 export const Title = styled.h2`
     color: #fff;
-    font-size: 40px;
+    font-size: .9rem;
     padding: 10px 0;
+
+    @media (min-width: 420px) {
+        font-size: 1.4rem;
+    }
+    @media (min-width: 620px) {
+        font-size: 2rem;
+    }
+    @media (min-width: 1064px) {
+        font-size: 3rem;
+    }
     span {
         color: #EF3636;
     }

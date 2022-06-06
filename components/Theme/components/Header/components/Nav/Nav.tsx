@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { Container, Link, ShoppingBagIcon } from './styles';
-import List from '../../../../../Global/List/List';
+import {
+  Container,
+  Link,
+  ShoppingBagIcon,
+  List,
+  ListItem,
+  Closed,
+  IconMenu,
+} from './styles';
 import NextLink from 'next/link';
-import ListItem from '../../../../../Global/ListItem/ListItem';
 
 const Nav: React.FC = () => {
   const router = useRouter();
-  console.log(router.pathname);
+  const [open, setOpen] = useState(true);
+  const handleClick = () => setOpen(!open);
   return (
     <Container>
-      <List>
+      <List open={open}>
+        <Closed onClick={handleClick} />
         <ListItem>
           <NextLink href="/" passHref>
             <Link active={router.pathname === '/'}>Home</Link>
@@ -44,6 +52,7 @@ const Nav: React.FC = () => {
           </NextLink>
         </ListItem>
       </List>
+      <IconMenu onClick={handleClick} />
     </Container>
   );
 };

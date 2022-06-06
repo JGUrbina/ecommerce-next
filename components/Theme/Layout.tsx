@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 import { Container } from './styles';
-
 
 type Props = {
   title?: string;
@@ -24,6 +24,7 @@ const Layout: React.FC<Props> = ({ title, description, children }: Props) => {
       </Head>
       <Header />
       <main>{children}</main>
+      <Footer />
     </Container>
   );
 };
