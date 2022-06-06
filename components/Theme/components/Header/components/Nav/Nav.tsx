@@ -13,7 +13,7 @@ import NextLink from 'next/link';
 
 const Nav: React.FC = () => {
   const router = useRouter();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(!open);
   return (
     <Container>

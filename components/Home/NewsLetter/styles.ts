@@ -1,11 +1,13 @@
 import styled from 'styled-components';
-
-export const Container = styled.section`
+type INewsLetterProps = {
+    image: string;
+}
+export const Container = styled.section<INewsLetterProps >`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("img/banner/b14.jpg");
+    background-image: url(${({image}) => image});
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041E42;
